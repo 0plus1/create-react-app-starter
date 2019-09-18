@@ -1,10 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Routes from './Routes';
 import * as serviceWorker from './serviceWorker';
+import { Router } from 'react-router';
+import { createBrowserHistory } from 'history';
+
+import Routes from './Routes';
 
 ReactDOM.render(
-  <Routes />,
+  <Router history={createBrowserHistory()}>
+    <Routes />
+  </Router>,
   document.getElementById('root'),
 );
 

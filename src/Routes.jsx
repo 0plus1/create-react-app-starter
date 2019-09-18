@@ -11,13 +11,11 @@ import Hello from './views/Hello';
 import FourOFour from './views/FourOFour';
 
 const Routes = () => (
-  <Router history={createBrowserHistory()}>
-    <Switch>
-      <Route exact path="/" component={Home} />
-      <Route exact path="/hello/:name/:location" component={Hello} />
-      <Route component={FourOFour} status={404} />
-    </Switch>
-  </Router>
+  <Switch>
+    <Route exact path="/" component={Home} />
+    <Route exact path="/hello/:name/:location" component={Hello} />
+    <Route component={FourOFour} status={404} />
+  </Switch>
 );
 
 export default Routes;
