@@ -4,5 +4,13 @@
   "globals": {
     "window": true,
     "document": true
-  }
+  },
+  "overrides": [
+    {
+      "files": ["setupTests.js"],
+      "rules": {
+        "import/no-extraneous-dependencies": "off"
+      }
+    }
+  ]
 }
