@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "env-cmd": "^10.0.1",
     "history": "^4.10.1",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
@@ -14,7 +15,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "env-cmd .env.production react-scripts build",
+    "build:staging": "env-cmd .env.staging react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
