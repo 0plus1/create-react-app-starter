@@ -12,6 +12,11 @@ function Home() {
           Personalised welcome
         </Link>
       </p>
+      <p>
+        <Link to="/styled-redux">
+          Styled Redux
+        </Link>
+      </p>
     </>
   );
 }
